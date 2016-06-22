@@ -114,29 +114,25 @@
 
  
 <!-- Top Bar -->
+
 <?php if ($page['authmenu']): ?>
-<div class="trwrap authmenu">
-<div class="row">
-		<div class="small-12 columns authmenu authenticated">
+<div class="expanded row trwrap authmenu">
+    <div class="columns">
  <?php print render($page['authmenu']); ?>
-
-
-		</div>
 	</div>
-</div>
- <?php endif; ?>
+    </div>
+<?php endif; ?>
+
     
 <?php if ($page['alertbar']): ?>
 <div class="trwrap alertbar">
 <div class="row">
 		<div class="small-12 columns alertbar artistslogan">
  <?php print render($page['alertbar']); ?>
-
-
 		</div>
 	</div>
 </div>
- <?php endif; ?>
+<?php endif; ?>
 
 
 <div class="row">

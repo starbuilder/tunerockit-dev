@@ -114,6 +114,15 @@
 <?php endif; ?>
 
 
+<?php if ($page['authmenu']): ?>
+<div class="expanded row trwrap authmenu">
+    <div class="columns">
+ <?php print render($page['authmenu']); ?>
+	</div>
+</div>
+<?php endif; ?>
+
+
 <div class="trhead" style="background:url(<?php print file_create_url($node->field_header_image[LANGUAGE_NONE][0]['uri']); ?>) center center;background-size:cover;"> 
 
 
