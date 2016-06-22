@@ -202,6 +202,8 @@
     
   <div class="<?php print $main_columns; ?> columns">
    <?php print $messages; ?>
+   
+
   
     <?php print render($page['content']); ?>
   </div>
