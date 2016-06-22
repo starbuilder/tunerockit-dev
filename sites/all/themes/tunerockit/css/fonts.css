@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'kandykornnormal';
+    src: url('../fonts/kandykorn/kandykorn-normal-webfont.woff2') format('woff2'),
+         url('../fonts/kandykorn/kandykorn-normal-webfont.woff') format('woff'),
+         url('../fonts/kandykorn/kandykorn-normal-webfont.ttf') format('truetype'),
+         url('../fonts/kandykorn/kandykorn-normal-webfont.svg#kandykornnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

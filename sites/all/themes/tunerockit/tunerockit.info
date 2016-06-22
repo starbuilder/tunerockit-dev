@@ -1,0 +1,23 @@
+name = tunerockit
+description = tunerockit.com theme
+core = 7.x
+engine = phptemplate
+
+regions[searchmenu] = Searchmenu
+regions[mainmenu] = MainMenu
+regions[navigation] = Navigation
+regions[authmenu] = Authmenu
+regions[alertbar] = Alertbar
+regions[content] = Content
+regions[left] = Left
+regions[right] = Right
+regions[footer] = Footer
+
+stylesheets[all][] = css/foundation.css
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/app.css
+
+
+scripts[] = js/vendor/what-input.js
+scripts[] = js/vendor/foundation.js
+scripts[] = js/app.js
