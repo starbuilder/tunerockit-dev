@@ -72,48 +72,52 @@
  * @ingroup themeable
  */
 ?>
-<?php if ($page['searchmenu']): ?>
 
- <div class="upper-bar">
-<div class="row">
-<div class="small-12 columns" id="brandmenu">
-  <div class="top-bar-left">
+
+<?php if ($page['searchmenu']): ?>
+<div class="top-bar" id="search-menu">
+ <div class="expanded row">
+ <div class="small-12 columns">
+  <div class="top-bar-left"> 
 
   </div>
     <div class="top-bar-right">
     <?php print render($page['searchmenu']); ?>
-
   </div>
   </div>
   </div>
 </div>
+<?php endif; ?>
+    
 
- <?php endif; ?>
-
- <?php if ($page['mainmenu']): ?>
-<div class="trwrap mainmenu">
-<div class="row">
-		<div class="small-12 columns mainmenus menuitems">
+    
+<?php if ($page['mainmenu']): ?>
+<div class="expanded row trwrap mainmenu">
+		<div class="columns">
  <?php print render($page['mainmenu']); ?>
-
-
+		</div>
+</div>
+<?php endif; ?>
+    
+    
+<?php if ($page['navigation']): ?>
+	<div class="expanded row trwrap navigation">
+		<div class="columns">
+ <?php print render($page['navigation']); ?>
 		</div>
 	</div>
+<?php endif; ?>
+
+
+<?php if ($page['authmenu']): ?>
+<div class="expanded row trwrap authmenu">
+    <div class="columns">
+ <?php print render($page['authmenu']); ?>
+	</div>
 </div>
- <?php endif; ?>
+<?php endif; ?>
 
 
- <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="small">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
- </div>
-
-<div class="top-bar" id="example-menu">
-  <div class="top-bar-left">
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu')))); ?>
-  </div>
-</div>
-<!-- Top Bar -->
 
 
 
