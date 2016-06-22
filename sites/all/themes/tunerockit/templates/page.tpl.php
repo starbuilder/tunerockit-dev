@@ -180,11 +180,14 @@
 
 
 <?php if ($page['footer']): ?>
-  <div class="row"><div class="large-12 columns"><hr></div></div>
-  <div class="row">
+  <div class="expanded row footeroutsy footback">
+      <div class="large-12 columns"><hr></div>
+</div>
+  <div class="expanded row trfooter footerinsy footback">
     <div class="large-12 columns">
 			<?php print render($page['footer']); ?>
     </div>
   </div>
 	<!-- Footer -->
 <?php endif; ?>
+

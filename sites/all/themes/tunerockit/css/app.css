@@ -52,6 +52,7 @@ body {
 }
 
 .navigation {background-color:#87c8e3;}
+.authmenu {background-color:#eee;;}
 ul.action-links {
 	background-color:#87c8e3;
 	padding:0;
@@ -179,3 +180,5 @@ dl.sub-nav .tabs.primary {
     padding: 0;
 }
 input#edit-group-leave {display:none;}
+
+.footback {background-color:rgba(10,10,10,0.7);}
