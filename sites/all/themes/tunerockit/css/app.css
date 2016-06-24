@@ -31,11 +31,14 @@ margin-top:100px;
 	padding:15px 0;
 }
 
+.jp-playlist {display:none;}
+
 /*dark background to support form theme*/
 body {
   background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_wall.png);
-}
 
+}
+body, .content {  color:#eee;}
 .mainmenu .leaf a {
     color: white;
 }
@@ -50,7 +53,7 @@ body {
 .navigation a {
     color: #444;
 }
-
+.trwrap h4 {display:none;}
 .navigation {background-color:#87c8e3;}
 .authmenu {background-color:#eee;;}
 ul.action-links {

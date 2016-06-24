@@ -73,10 +73,22 @@
  */
 ?>
 
+<!-- include jQuery library -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<!-- include JustWave Player css and js files -->
+<link type="text/css" rel="stylesheet" href="/sites/all/libraries/justwave/justwave.player.css">
+<script src="/sites/all/libraries/justwave/justwave.player-min.js"></script>
+
+<script>
+$(document).ready( function() {
+// inject players to audio elements
+// if they have justwave class name only
+  $.justwave();
+});
+</script>
 
 
-
-
+<audio width="800" height="269" poster="/sites/default/files/styles/medium/public/song-img/14489099-Seamless-wave-hand-drawn-pattern-Abstract-background--Stock-Vector.jpg" src="http://everwebcodebox.com/audio-player-master/audio/CosmicTraveler.mp3"></audio> 
 
 
 <?php if ($page['searchmenu']): ?>
@@ -206,6 +218,9 @@
 
   
     <?php print render($page['content']); ?>
+    
+    
+    
   </div>
   <!-- Main content area -->
 
